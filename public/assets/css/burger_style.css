@@ -29,4 +29,23 @@
 
   body {
       background-color: sandybrown;
+      text-align: center;
+      margin-top: 50px;
   }
+
+  #ca {
+    height:50px;
+    width: 300px;
+    line-height: 1.8em;
+    font-size:12pt;
+  }
+
+  .submit {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 80px;
+    font-size: 18px;
+  }
+  
