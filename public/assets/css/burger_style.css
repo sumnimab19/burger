@@ -1,10 +1,27 @@
-/* li {
+ul {
+  display: inline-block; 
+  *display: inline; 
+  margin-right: 100px;
+  text-align: left;
+}
+
+li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
+    list-style: none;
+    /* display: inline; */
   }
-  
+
+  .devoured{
+    display: inline;
+  }
+  .btnDevoured{
+    float: right;
+  }
+  /*
   .label {
+
     font-weight: bold;
   }
   
@@ -49,3 +66,11 @@
     font-size: 18px;
   }
   
+  .nonDevoredUl {
+    position: relative;
+    
+  }
+
+  p {
+    display:inline-block;
+  }

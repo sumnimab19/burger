@@ -6,7 +6,6 @@ $(function() {
   
       const newBurger = {
         name: $("#ca").val().trim(),
-        // sleepy: $("[name=sleepy]:checked").val().trim()
       };
   
       // Send the POST request.
