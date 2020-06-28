@@ -18,6 +18,7 @@ li {
   }
   .btnDevoured{
     float: right;
+    margin-left: 40px;
   }
   /*
   .label {

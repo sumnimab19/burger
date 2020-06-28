@@ -5,24 +5,25 @@
 
 <ul class="nonDevoredUl">
   {{#each burgers}}
-  	<li class="align-self-end">
+  	<li class="align-self-end devouredLi">
   	   {{!-- <p> {{this.id}}</p> --}}
-       <p> {{this.burger_name}}</p>
-           <button data-id="{{this.id}}" class="btnDevoured">Devoured</button>
-
+      <p> {{this.burger_name}}</p>
+      <button data-id="{{this.id}}" class="btnDevoured">Devoured</button>
   	</li>
   {{/each}}
 </ul>
 
-<ul class="nonDevoredUl">
+<ul class="DevoredUl">
   {{#each burgers}}
-  <li>
+  {{#if devoured}}
+  {{!-- <li> --}}
   	   {{!-- <p> {{this.id}}</p> --}}
-       <p> {{this.burger_name}}</p>
-  	</li>
+       {{> burgers/burger-block devoured=false}}
+  	{{!-- </li> --}}
     {{!-- {{#unless devoured}} --}}
       {{!-- {{> burgers/burger-block devoured=true}} --}}
     {{!-- {{/unless}} --}}
+    {{/if}}
   {{/each}}
 </ul> 
 
