@@ -49,6 +49,7 @@ const orm = {
             cb(result);
         });
     },
+    
     insertOne: function(table, cols, vals, cb) {
         let queryString = "INSERT INTO " + table;
     
