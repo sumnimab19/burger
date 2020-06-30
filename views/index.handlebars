@@ -3,38 +3,23 @@
 
 <h1 class="header">Eat-Da-Burger!</h1>
 
-<ul class="nonDevoredUl">
+<ul>
   {{#each burgers}}
-  	<li class="align-self-end devouredLi">
-  	   {{!-- <p> {{this.id}}</p> --}}
-      <p> {{this.burger_name}}</p>
-      <button data-id="{{this.id}}" class="btnDevoured">Devoured</button>
-  	</li>
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+        <button data-id="{{this.id}}" class="btnDevoured">Devoured</button>
+    {{/unless}}
   {{/each}}
 </ul>
 
-<ul class="DevoredUl">
+<ul class="devouredUl">
   {{#each burgers}}
-  {{#if devoured}}
-  {{!-- <li> --}}
-  	   {{!-- <p> {{this.id}}</p> --}}
+    {{#if devoured}}
        {{> burgers/burger-block devoured=false}}
-  	{{!-- </li> --}}
-    {{!-- {{#unless devoured}} --}}
-      {{!-- {{> burgers/burger-block devoured=true}} --}}
-    {{!-- {{/unless}} --}}
     {{/if}}
   {{/each}}
 </ul> 
 
-
-{{!-- <ul class="devoredUl">
-  {{#each burgers}}
-    {{!-- {{#if devoured}} --}}
-      {{!-- {{> burgers/burger-block devoured=false}} --}}
-    {{!-- {{/if}} --}}
-  {{!-- {{/each}} --}}
-{{!-- </ul> --}}
 
 <br>
 <form class="create-form">
@@ -48,4 +33,4 @@
   
 </form>
 
-<h4>Enter burger you want to eat. Click the Submit button</h4>
+<h5>Enter burger you want to eat. Click the Submit button</h5>

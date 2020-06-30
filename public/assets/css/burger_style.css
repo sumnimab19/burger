@@ -8,9 +8,7 @@ ul {
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
     list-style: none;
-    /* display: inline; */
   }
 
   .devoured{
@@ -20,22 +18,7 @@ li {
     float: right;
     margin-left: 40px;
   }
-  /*
-  .label {
-
-    font-weight: bold;
-  }
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-   */
   .burgerImg {
       width: 100px;
       height: 100px;
@@ -67,11 +50,15 @@ li {
     font-size: 18px;
   }
   
-  .nonDevoredUl {
+  .devouredUl {
     position: relative;
     
   }
 
-  p {
+  .btnDevoured {
     display:inline-block;
   }
+  /* .ul__element {
+    display: inline-block;
+  } */
+

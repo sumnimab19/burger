@@ -1,11 +1,12 @@
 $(function() {
+  
   $(".btnDevoured").on("click", function(event) {
-    var id = $(this).data("id");
-    var newDevour = $(this).data("newDevour");
+   let id = $(this).data("id"); // keep this
+    let newDevour = $(this).data("newDevour");// keep this
 
-    var newDevouredState = {
+    let newDevouredState = {
       devoured: newDevour
-    };
+    }; // keep this
 
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
@@ -13,13 +14,10 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed sleep to", newDevour);
+        console.log("changed sleep to", newDevour); // keep this
         // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-    $(".devouredLi").hide(); 
-    $(".btnDevoured").hide(); 
+        location.reload();// keep this
+      }); 
   });
 });
 
