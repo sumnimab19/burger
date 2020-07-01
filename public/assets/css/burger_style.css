@@ -22,21 +22,22 @@ li {
   .btnDevoured{
     float: right;
     margin-left: 40px;
+    background-color: darkorange;
   }
   
   .burgerImg {
-      width: 100px;
-      height: 100px;
+      height: 200px;
   }
 
   .header {
     color: red;
+    font-family: cursive;
   }
 
   body {
-      background-color: sandybrown;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 30px;
+      opacity:0.8;
   }
 
   #ca {
@@ -47,7 +48,7 @@ li {
   }
 
   .submit {
-    background-color: steelblue;
+    background-color: rgb(39, 39, 216);
     color: white;
     font-weight: bold;
     height: 40px;
@@ -57,7 +58,7 @@ li {
   
   .devouredUl {
     margin-left: 200px;
-    
+    font-family: cursive;
   }
 
 

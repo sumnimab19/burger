@@ -33,7 +33,7 @@ $(function() {
       };
       
       if($('#ca').val() === '') {
-          $("#errorMsg").text("**Please enter burger name to submit");
+          $("#errorMsg").text("**Please enter burger name");
       } else {
       // Send the POST request.
       $.ajax("/api/burgers", {
