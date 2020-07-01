@@ -31,7 +31,10 @@ $(function() {
       const newBurger = {
         burger_name: $("#ca").val().trim(),
       };
-  
+      
+      if($('#ca').val() === '') {
+          $("#errorMsg").text("**Please enter burger name to submit");
+      } else {
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
@@ -43,6 +46,8 @@ $(function() {
           location.reload();
         }
       );
-    });    
+      }
+    });   
+   
 });
   

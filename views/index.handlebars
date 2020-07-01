@@ -7,7 +7,7 @@
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
-        <button data-id="{{this.id}}" class="btnDevoured">Devoured</button>
+        <button data-id="{{this.id}}" class="btnDevoured">Devour it!</button>
     {{/unless}}
   {{/each}}
 </ul>
@@ -24,10 +24,9 @@
 <br>
 <form class="create-form">
   <div class="form-group">
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca" name="name" autocomplete="off">
   </div>
-
-  <br>
+  <p id="errorMsg"></p>
 
   <button type="submit" class="submit">Submit</button>
   
