@@ -43,4 +43,5 @@ npm i mysql
 
 
 ## Link to the published app
+https://arrogant-doright-94456.herokuapp.com/
 
