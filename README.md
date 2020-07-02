@@ -1,4 +1,4 @@
-# burger
+# Burger Logger - Node Express Handlebars
 
 
 This application is a burger logger with MySQL, Node, Express, Handlebars and a ORM. It follows the MVC design pattern; used Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
@@ -39,6 +39,7 @@ npm i mysql
 
 ## Screenshot 
 
+![Image 7-1-20 at 5 01 PM](https://user-images.githubusercontent.com/55207625/86302293-17c1a080-bbbd-11ea-9ef3-3182effaea72.jpeg)
 
 
 ## Link to the published app
